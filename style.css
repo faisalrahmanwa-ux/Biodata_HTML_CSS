@@ -1,0 +1,101 @@
+/* --- Gaya Umum Body (dari Modul 2) --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* --- Container utama untuk membatasi lebar halaman --- */
+header, main, footer {
+    max-width: 1100px;
+    margin: 0 auto; /* Menengahkan container utama */
+    padding: 0 20px; /* Padding kiri-kanan */
+}
+
+/* --- Header dan Footer (dari Modul 2, sedikit modifikasi) --- */
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0; /* Padding atas-bawah ditambah */
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1.5rem 0; /* Padding diubah sedikit untuk flexbox */
+}
+
+/* --- Styling Kartu (dari Modul 2) --- */
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* --- Styling Gambar, Judul, Link (dari Modul 2) --- */
+.card img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ================================================ */
+/* --- ATURAN BARU DARI TUGAS AKHIR MODUL 3 --- */
+/* ================================================ */
+
+/* --- 1. Layout Utama (Grid) --- */
+.main-layout {
+    display: grid;
+    /* Kolom pertama 2 bagian, kolom kedua 1 bagian */
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; /* Jarak antar kolom */
+}
+
+/* --- Styling untuk sidebar agar kartu di dalamnya punya jarak */
+.sidebar .card {
+    margin-bottom: 20px;
+}
+
+/* --- 2. Layout Footer (Flexbox) --- */
+footer {
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center;     /* Menengahkan secara vertikal */
+    min-height: 80px;        /* Memberi tinggi minimal agar align-items berfungsi */
+}
+
+/* --- 3. Desain Responsif (Media Query) --- */
+@media (max-width: 768px) {
+    /* Jika layar 768px atau lebih kecil */
+    .main-layout {
+        /* Ubah layout grid menjadi 1 kolom saja */
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+}
