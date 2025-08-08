@@ -1,0 +1,60 @@
+/* --- Gaya Umum Body --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Latar belakang abu-abu sangat muda */
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Memberi jarak agar konten tidak menempel di tepi browser */
+}
+
+/* --- Header dan Footer --- */
+header, footer {
+    background-color: #333; /* Warna biru tua (sesuai permintaan) */
+    color: #ffffff;         /* Warna teks putih */
+    text-align: center;      /* Teks di tengah */
+    padding: 1rem 0;         /* Padding atas-bawah 1rem (sekitar 16px) */
+    margin-bottom: 20px;     /* Memberi jarak bawah dari header */
+}
+
+footer {
+    margin-top: 20px;        /* Memberi jarak atas dari footer */
+}
+
+/* --- Styling Kartu untuk Setiap Section --- */
+.card {
+    background: #ffffff;     /* Latar belakang kartu putih */
+    border: 1px solid #ddd;  /* Border tipis */
+    border-radius: 8px;      /* Sudut yang sedikit melengkung */
+    padding: 25px;           /* Padding di dalam kartu */
+    margin-bottom: 20px;     /* Jarak antar kartu */
+}
+
+/* --- Styling Gambar Profil --- */
+.card img {
+    display: block;          /* Agar bisa menggunakan margin auto */
+    margin: 0 auto 20px;     /* Tengah secara horizontal, jarak bawah 20px */
+    width: 150px;            /* Lebar gambar */
+    height: 150px;           /* Tinggi gambar (dibuat sama agar lingkaran sempurna) */
+    border-radius: 50%;      /* Membuat gambar menjadi bulat */
+    object-fit: cover;       /* Mencegah gambar menjadi gepeng jika aspek rasio tidak 1:1 */
+}
+
+/* --- Styling Judul di dalam Kartu --- */
+.card h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* --- Styling Link --- */
+a {
+    color: #007BFF;          /* Warna link biru cerah */
+    text-decoration: none;   /* Hilangkan garis bawah */
+}
+
+/* --- Styling Efek Hover pada Link (Tantangan Ekstra) --- */
+a:hover {
+    color: #0056b3;          /* Warna link menjadi biru lebih gelap saat disentuh mouse */
+    text-decoration: underline; /* Munculkan garis bawah saat disentuh untuk kejelasan */
+}
